@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fmi-surf"
+version = "0.1.0"
+description = "Python backend for FMU simulation web service."
+authors = ["dnlx"]
+readme = "README.md"
+packages = [{include = "fmi-surf"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^1.26.2"
+FMPy = {extras = ["complete"], version = "^0.3.19"}
+matplotlib = "^3.8.2"
+requests = "^2.31.0"
+pyqt5-qt5 = "<5.15.11"
+pyqtwebengine-qt5 = "<5.15.11"
+kaleido = "<0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
